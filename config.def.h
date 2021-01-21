@@ -22,7 +22,7 @@ static const Rule rules[] = {
 
 static const float mfact     = 0.5;
 static const int nmaster     = 1;
-static const int resizehints = 1;
+static const int resizehints = 0;
 
 static const Layout layouts[] = {
 	{ "[]=",      tile },
@@ -40,16 +40,16 @@ static const Layout layouts[] = {
 #include <X11/XF86keysym.h>
 static Key keys[] = {
 	{ MODKEY,                       XK_d,                    spawn,          SHCMD("dmenu_run") },
-	{ MODKEY,                       XK_Return,               spawn,          SHCMD("alacritty") },
+	{ MODKEY,                       XK_Return,               spawn,          SHCMD("urxvt") },
 	{ MODKEY,                       XK_w,                    spawn,          SHCMD("firefox") },
-	{ MODKEY,                       XK_f,                    spawn,          SHCMD("alacritty -e lf") },
+	{ MODKEY,                       XK_f,                    spawn,          SHCMD("urxvt -e lf") },
     { Mod1Mask|ControlMask,         XK_3,                    spawn,          SHCMD("maim -u | xclip -selection clipboard -t image/png") },
     { Mod1Mask|ControlMask,         XK_4,                    spawn,          SHCMD("maim -su | xclip -selection clipboard -t image/png") },
     { 0,                            XF86XK_AudioLowerVolume, spawn,          SHCMD("amixer set Master -q 10%-") },
 	{ 0,                            XF86XK_AudioMute,        spawn,          SHCMD("amixer set Master -q toggle") },
 	{ 0,                            XF86XK_AudioRaiseVolume, spawn,          SHCMD("amixer set Master -q 10%+") },
-    { 0,                            XF86XK_MonBrightnessUp,  spawn,          SHCMD("xbacklight -inc 10") },
-    { 0,                            XF86XK_MonBrightnessDown,spawn,          SHCMD("xbacklight -dec 10") },
+    { 0,                            XF86XK_MonBrightnessUp,  spawn,          SHCMD("brightnessctl s 10%+") },
+    { 0,                            XF86XK_MonBrightnessDown,spawn,          SHCMD("brightnessctl s 10%-") },
     { MODKEY|ShiftMask,             XK_f,                    togglefullscr,  {0} },
 	{ MODKEY,                       XK_comma,                incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_period,               incnmaster,     {.i = -1 } },
