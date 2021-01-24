@@ -2,6 +2,7 @@
 
 static const unsigned int borderpx  = 2;
 static const unsigned int snap      = 32;
+static const int swallowfloating    = 0;
 static const unsigned int systraypinning = 0;
 static const unsigned int systrayspacing = 2;
 static const int systraypinningfailfirst = 1;
@@ -17,7 +18,9 @@ static const char *colors[][3]      = {
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
+	{ "URxvt",   NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
 static const float mfact     = 0.5;
