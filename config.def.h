@@ -44,7 +44,7 @@ static const Layout layouts[] = {
 static Key keys[] = {
 	{ MODKEY,                       XK_d,                    spawn,          SHCMD("dmenu_run") },
 	{ MODKEY,                       XK_Return,               spawn,          SHCMD("urxvt") },
-	{ MODKEY,                       XK_w,                    spawn,          SHCMD("firefox") },
+	{ MODKEY,                       XK_w,                    spawn,          SHCMD("chromium") },
 	{ MODKEY,                       XK_f,                    spawn,          SHCMD("urxvt -e lf") },
     { Mod1Mask|ControlMask,         XK_3,                    spawn,          SHCMD("maim -u | xclip -selection clipboard -t image/png") },
     { Mod1Mask|ControlMask,         XK_4,                    spawn,          SHCMD("maim -su | xclip -selection clipboard -t image/png") },
