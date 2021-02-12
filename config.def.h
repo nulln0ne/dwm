@@ -9,13 +9,13 @@ static const int systraypinningfailfirst = 1;
 static const int showsystray        = 1;
 static const int showbar            = 1;
 static const int topbar             = 1;
-static const char *fonts[]          = { "terminus:size=11" };
+static const char *fonts[]          = { "iosevka:size=10" };
 static const char *colors[][3]      = {
 	[SchemeNorm] = { "#839496", "#002b36", "#002b36" },
 	[SchemeSel]  = { "#839496", "#073642", "#00323e" },
 };
 
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
 static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
