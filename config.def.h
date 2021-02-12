@@ -19,8 +19,8 @@ static const char *tags[] = { "one", "two", "three", "four", "five", "six", "sev
 
 static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "URxvt",   NULL,     NULL,           0,         0,          1,           0,        -1 },
-	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
+	{ "Alacritty", NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ NULL,        NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
 static const float mfact     = 0.5;
