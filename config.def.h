@@ -43,9 +43,9 @@ static const Layout layouts[] = {
 #include <X11/XF86keysym.h>
 static Key keys[] = {
 	{ MODKEY,                       XK_d,                    spawn,          SHCMD("dmenu_run") },
-	{ MODKEY,                       XK_Return,               spawn,          SHCMD("urxvt") },
+	{ MODKEY,                       XK_Return,               spawn,          SHCMD("alacritty") },
 	{ MODKEY,                       XK_w,                    spawn,          SHCMD("chromium") },
-	{ MODKEY,                       XK_f,                    spawn,          SHCMD("urxvt -e lf") },
+	{ MODKEY,                       XK_f,                    spawn,          SHCMD("alacritty -e lf") },
     { Mod1Mask|ControlMask,         XK_3,                    spawn,          SHCMD("maim -u | xclip -selection clipboard -t image/png") },
     { Mod1Mask|ControlMask,         XK_4,                    spawn,          SHCMD("maim -su | xclip -selection clipboard -t image/png") },
     { 0,                            XF86XK_AudioLowerVolume, spawn,          SHCMD("amixer set Master -q 10%-") },
