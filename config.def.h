@@ -11,8 +11,8 @@ static const int showbar            = 1;
 static const int topbar             = 1;
 static const char *fonts[]          = { "iosevka:size=10" };
 static const char *colors[][3]      = {
-	[SchemeNorm] = { "#839496", "#002b36", "#002b36" },
-	[SchemeSel]  = { "#839496", "#073642", "#00323e" },
+	[SchemeNorm] = { "#f8f8f2", "#282a36", "#282a36" },
+	[SchemeSel]  = { "#f8f8f2", "#1b1d28", "#00323e" },
 };
 
 static const char *tags[] = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
