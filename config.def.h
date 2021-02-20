@@ -25,7 +25,7 @@ static const Rule rules[] = {
 
 static const float mfact     = 0.5;
 static const int nmaster     = 1;
-static const int resizehints = 0;
+static const int resizehints = 1;
 
 static const Layout layouts[] = {
 	{ "[]=",      tile },
